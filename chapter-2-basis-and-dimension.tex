@@ -1,0 +1,97 @@
+\chapter{Basis and Dimension}
+
+\begin{definition}
+	Let $V$ be a vector space and $U \subset V$ a non-empty set. We call $U$ a subspace of $V$ if it is closed under linear combinations. \\
+	$ \forall \lambda, \mu \in F$ and $\forall u, v \in V : \lambda u + \mu v \in U$, where $F$ is the field where scalars come from. 
+\end{definition}
+
+So essentially subspace is a vector space on its own. And it is closed means that we can add two elements and multiply by scalars and still remain in that space. \\
+
+\textbf{Examples}
+
+\begin{itemize}
+	\item $C(\chi)$ is a subspace of $\Re^\chi$ where $C(\chi)$ is the set of continuous functions on domain $\chi$ and $\Re^\chi$ is any real valued function. Sum of two continuous functions is continuous and scalar multiplication of a continous function is a continous function as well. 
+	\item The set $S$ of symmetric matrices of size $n \times m$ is a subspace of $\Re^{n \times m}$. Since sum of two symmetric matrices is a symmetric matrix and the same goes for scalar multiplication.  
+\end{itemize}
+
+\begin{definition}
+	Let $V$ be a vector space over $F$ and $u_1,....,u_n \in V$, $\lambda_1,......\lambda_n \in F$. Then $\sum_{i=1}^{n} \lambda_i u_i$ is called a linear combination. The set of all linear combinations of $u_1,....,u_n$ is called the span (linear hull) of $u_1,....,u_n$. \\
+	$span(u_1,....,u_n) := \{\sum_{i=1}^{n} \lambda_i u_i | \lambda_i \in F \}$  
+\end{definition}
+
+The set $U:= \{ u_1,....,u_n \}$ is the generator of $span(u_1,....,u_n)$
+
+\begin{definition}
+	A set of vectors $v_1,.....v_n$ is called linearly independent if the following holds: \\
+	$ \sum_{i=1}^{n} \lambda_i v_i = 0 \implies \lambda_1 = ..... = \lambda_n = 0$ \\
+\end{definition}
+
+\textbf{Examples}
+
+\begin{itemize}
+	\item The vectors $\begin{bmatrix} 	1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 	2 \\ 1 \\ 0 \end{bmatrix}$ and $\begin{bmatrix} 3 \\ 4 \\ 1 \end{bmatrix} \in \Re^3$ are linearly independent. 
+	\item The functions $sin(x)$ and $cos(x) \in \Re^\Re$ are linearly independent. 
+	\item Any set of $d+1$ vectors in $\Re^d$ is linearly dependent.  
+\end{itemize}
+
+\begin{definition}
+	A subset $B$ of a vector space $V$ is called a (Hammel) basis if: 
+	\begin{itemize}
+		\item $span(B) = V$
+		\item $B$ is linearly independent. 
+	\end{itemize}
+\end{definition}
+
+This means that any vector in $V$ can be written as a linear combination of vectoes in $B$ but basis vectors themselves cannot be written in terms of each other since they are independent. \\ 
+
+\textbf{Examples}
+
+\begin{itemize}
+	\item The canonical basis of $\Re^3$ is  $\begin{bmatrix} 	1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 	0 \\ 1 \\ 0 \end{bmatrix}$ and $\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}$.
+	\item Another basis of $\Re^3$ is given by $\Re^3$ is  $\begin{bmatrix} 	1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 	1 \\ 1 \\ 0 \end{bmatrix}$ and $\begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}$. \\
+\end{itemize}
+
+\begin{proposition}
+	If $U = \{u_1,....u_n\}$ spans a vector space $V$, then the set $U$ can be reduced to a basis of $V$.
+\end{proposition}
+
+\begin{proof}
+	If $U$ is already linearly independent then we are done. If $U$ is linearly dependent, $ \exists u \in U$ that is a linear combination of other vectors in $U$. We repeat this step untill we reach a point where all vectors in $U$ are linearly independent. 
+\end{proof}
+
+\begin{definition}
+	A vector space is called finite dimentional if it has a finite basis.
+\end{definition}
+
+\begin{proposition}
+	Let $U = \{u_1,...,u_n\} \subset V$ be a set of linearly independent vectors and let $V$ be a finite dimensional vector space. Then $U$ can be extended to a basis of $V$. 
+\end{proposition}
+
+\begin{proof}
+	Let $w_1,...,w_m$ be a basis of $V$. Consider a set $\{u_1,...u_n,w_1,...,w_m\}$. Remove vectors from the end untill remaining vectors are linearly independent. The remaining set $spans(V)$, is linearly independent by construction and contains $U$.
+\end{proof}
+
+\begin{corollary}
+	Let $V$ be a finite dimensional vector space. Then any two basis of $V$ have the same length.
+\end{corollary}
+
+\begin{definition}
+	The length of the basis of a finite dimensional vector space is called its dimension. 
+\end{definition}
+
+We have defined what a basis and we also know what a subspace is. Another notion which brings these two things together is known as the \textit{sum} and \textit{direct sum} of subspaces. 
+
+\begin{definition}
+	Assume that we have two subspaces $U_1$ and $U_2$ of a vector space $V$. The sum of the two spaces is defined as : \\
+	$U_1 + U_2 := \{ u_1 + u_2 | u_1 \in U_1, u_2 \in U_2 \}$
+\end{definition}
+
+The sum which has just seen is known as the direct sum. If each element in the sum can be written in exactly one way$(U_1\oplus U_2)$.
+
+\begin{proposition}
+	Suppose $V$ is finite-dimensional, and $U \subset V$ is a subspace, then there exists a subspace $W \subset V$ such that $U \oplus W =  V$.
+\end{proposition}
+
+\begin{proof}
+	Let the set $\{u_1,...u_k\}$ be a basis of $U$. Extend it to a basis of $V$, say the resulting set is $\{u_1,...u_k, v_1,...v_m\}$. Define $W = span\{v_1,...v_m\}$ 
+\end{proof}

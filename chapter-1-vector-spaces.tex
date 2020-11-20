@@ -1,0 +1,64 @@
+	\chapter{Vector Spaces}
+	
+	A vector space is the general mathemtical structure we need to be able to talk about linear mappings. To introduce a vector space we need a lot of mathematical concepts. So we start with a group. 
+	
+	\begin{definition}
+		A set $G$ of elements with an operation $+$: $G \times G \rightarrow G$ is called a group if the following properties hold: 
+	\end{definition}
+	
+	\begin{itemize}
+		\item[G1] Associativity: $ \forall a, b, c \in G$ : $(a + b) + c = a + (b + c) $
+		\item[G2] Identity element: $\exists e \in G: \forall g \in G: e + g = g + e = g $
+		\item[G3] Inverse element: $ \forall a \in G$, $ \exists b \in G : a + b = b + a = e$
+	\end{itemize}
+	
+	A group is called a commutative group (Abelian group) if we have additionally that $ \forall a, b \in G: a + b = b + a$ \\
+	
+	\textbf{Examples}
+	
+	\begin{itemize}
+		\item $(\Re^n, +)$: This can be thought of as an $n$-dimensional vector with addition as the associated operation. The addition of three vectors can be done in any order and is thus associative. The identity element in this case is the zero vector. The inverse element is the negative of each element. Thus this combination forms a group. 
+		
+		\item $(\Re^+, .)$: This is the set of positive real numbers with multiplication as the associated operation. This also forms a group. 
+		
+		\item $(\Re^-, .)$: This is set of negative real numbers with associated operation as multiplication. It does not form a group, since multiplication of two negative real numbers gives us a positive real number and that is out of the set considered. We can also say that the set of negative real numbers is not closed with respect to multiplication. 
+		
+	\end{itemize}
+
+	\begin{definition}
+		A set $F$ with two operation $ (+ , \cdot) : F \times F \rightarrow F$ is called a field if the following properties hold: 
+	\end{definition}
+	
+	\begin{itemize}
+		\item[F1] $ (F, +) $ is a commutative group with identity element 0.
+		\item[F2] $(F \setminus\{0\}, \cdot)$ is a commutative group with identity element 1. 
+		\item[F3] Distributivity:  $\forall a, b, c \in F: a \cdot (b + c) = a \cdot b + a \cdot c$
+	\end{itemize}
+
+	The two most common fields are the ral numbers $(\Re, +, \cdot)$ and complex numbers $(\mathbb{C}, +, \cdot)$ with defined addition and multiplication.
+	
+	\begin{definition}
+		Let $F$ be a field with identity elements 0 and 1. A vector space over the field $F$ is a set $V$ with a mapping: $ (+) : V \times V \rightarrow V$ (vector addition)  and a mapping $(\cdot) : F \times V \rightarrow V$ (scalar multiplication) such that: 
+	\end{definition}
+
+	\begin{itemize}
+		\item[V1] $(V, +)$ is a commutative group.
+		\item[V2] Multiplicative identity: $\forall v \in V: 1 \cdot v = v$
+		\item[V3] Distributive property: $\forall a, b  \in F$ and $ \forall u, v \in V$
+			\subitem $a \cdot (u + v) = a \cdot u + a \cdot v$
+			\subitem $(a + b)u = a \cdot u + b \cdot u $ 	
+	\end{itemize}
+
+	Elements of $V$ are called vectors and elements of $F$ are called scalars. Depending on whether the field is real or complex we call the space as real vector space or complex vector space. \\
+	
+	\textbf{Examples}
+	
+	\begin{itemize}
+		
+		\item $\Re^n$ with standard operations of adding vectors and multiplying vectors with a scalar. 
+		\item Function spaces: These are spaces which consists of functions. And essentially the whole field of functional analysis exploits the fact if you group them in a vector space, there are many properties that you can find about functions without even explicitly looking at what type of functions you are talking about. 
+		\subitem $\Re^\chi$ : $\{f: \chi \rightarrow \Re\}$ the space of all real valued functions on a set $\chi$. No we define the two operations: 
+		\subitem $ + : \Re^\chi \times \Re^\chi \rightarrow \Re^\chi$ , $(f + g)(x) := f(x) + g(x)$
+		\subitem $\cdot : \Re \times \Re^\chi \rightarrow \Re^\chi, (\lambda \cdot f)(x) := \lambda \cdot (f(x))$ \\
+		Then $(\Re^\chi, +, \cdot)$ is a vector space.
+	\end{itemize}

@@ -70,7 +70,7 @@ We can see in the figure above that a part of $U$ which is mapped to 0 is known 
 
 \begin{proof}
 	Denote $T^{-1}(w_1) := z_1,...,T^{-1}(w_m) := z_m$. If $\{u_1,...u_n,z_1,...z_m\}$ for a basis of $V$, then they must span the whole space $V$ and be linearly independent. Let's do each step by step. \\
-	Step 1: $V \subset span\{u_1,...u_n,z_1,...z_m\}$ \\ 
+	Step 1: Prove that $V \subset span\{u_1,...u_n,z_1,...z_m\}$ \\ 
 	Let $v \in V$, and $Tv \in range(T)$. Since we know the basis of $range(T)$,
 	\begin{align*}
 		\exists \lambda_1,...,\lambda_m: Tv &= \lambda_1 w_1 + ... + \lambda_m w_m \\
@@ -83,11 +83,30 @@ $\implies (v - (\lambda_1z_1 + ... + \lambda_mz_m)) \in kernal(T)$ since this ve
 (v - (\lambda_1z_1 + ... + \lambda_mz_m)) &= \mu_1 u_1 + ... + \mu_n u_n \\ 
 v &= \lambda_1 z_1 + ... + \lambda_m z_m + \mu_1 u_1 + ... + \mu_n u_n
 \end{align*}
-Step 2 : $u_1,...,u_n, z_1,...,z_m$ are linearly independent \\ 
+Step 2 : Prove that $u_1,...,u_n, z_1,...,z_m$ are linearly independent. \\ 
 Assume that $\mu_1 u_1 + ... \mu_n u_n + \lambda_1 z_1 + ... + \lambda_m z_m  = 0$ \\
 If these vectors are linearly independent then all the coefficients will simultaneously go to zero. 
-
+\begin{align*}
+	\lambda_1 w_1 + ... + \lambda_m w_m &= \lambda_1 T(z_1) + ... + \lambda_m T(z_m) \\
+	&= \lambda_1 T(z_1) + ... + \lambda_m T(z_m) + \mu_1 T(u_1) + ... + \mu_n T(u_n) \\ 
+	&= T(\lambda_1 z_1 + ... \lambda_m z_m + \mu_1 u_1 + ... + \mu_n u_n) = T(0) = 0
+\end{align*}
+We can add $ \mu_1 T(u_1) + ... + \mu_n T(u_n)$ to the expression since it goes to zero by definition of a kernal. Everything inside the operator is zero due to the assumption at the beginning of step 2. 
+Since $\lambda_1 w_1 + ... + \lambda_m w_m = 0$ and $w_1,...,w_m$ is a basis 
+$\implies \lambda_1 = ... = \lambda_m = 0$ \\
+Now $\mu_1 u_1 + ... + \mu_n u_n = 0$ since we have already proved the other half of the assumption to be zero. Since $u_1,...,u_n$ is the basis of the kernal $\implies \mu_1=...\mu_n=0$.
 \end{proof}
+
+\begin{proposition}
+	Let $T \in \mathcal{L}(V, W)$ and $V, W$ be finite dimensional, then the following statements are equivalent.
+	\begin{itemize}
+		\item T is injective
+		\item T is surjective
+		\item T is bijective
+	\end{itemize} 
+\end{proposition}
+
+This proposition does not hold in infinite dimensional spaces. 
 
 
 

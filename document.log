@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.7.4)  20 NOV 2020 06:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.7.4)  20 NOV 2020 09:00
 entering extended mode
 **./document.tex
 (document.tex
@@ -232,21 +232,21 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {C:/Users/aniru/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-(chapter-1-vector-spaces.tex [2
-
-]
+(chapter-1-vector-spaces.tex
 Chapter 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-[3]
+[1
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-) (chapter-2-basis-and-dimension.tex [4]
+) (chapter-2-basis-and-dimension.tex [2]
 Chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
@@ -258,7 +258,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
-[5
+[3
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
@@ -270,9 +270,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-[6]) (chapter-3-linearmaps-kernals-range.tex [7] [8
-
-]
+[4]) (chapter-3-linearmaps-kernals-range.tex [5]
 Chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
@@ -284,44 +282,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[9]
-<images/ch-3-img-1.png, id=47, 519.9425pt x 246.9225pt>
+[6
+
+]
+<images/ch-3-img-1.png, id=41, 519.9425pt x 246.9225pt>
 File: images/ch-3-img-1.png Graphic file (type png)
 <use images/ch-3-img-1.png>
 Package pdftex.def Info: images/ch-3-img-1.png  used on input line 61.
 (pdftex.def)             Requested size: 299.0pt x 141.99438pt.
- [10 <./images/ch-3-img-1.png>]) [11] (document.aux) ) 
+ [7 <./images/ch-3-img-1.png>]) (chapter-4-matrices.tex [8]
+Chapter 4.
+) [9
+
+] (document.aux) ) 
 Here is how much of TeX's memory you used:
- 3366 strings out of 480790
- 44289 string characters out of 2897302
- 297568 words of memory out of 3000000
- 19337 multiletter control sequences out of 15000+200000
+ 3371 strings out of 480790
+ 44418 string characters out of 2897302
+ 297534 words of memory out of 3000000
+ 19339 multiletter control sequences out of 15000+200000
  545917 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,8n,27p,415b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\aniru\AppData\
-Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1000.pk> <C:\Users\aniru\Ap
-pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\an
-iru\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Us
-ers\aniru\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> 
-<C:\Users\aniru\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx248
-8.pk> <C:\Users\aniru\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
-cbx2074.pk> <C:\Users\aniru\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
-i600\ecrm1000.pk> <C:\Users\aniru\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
-/ec/dpi600\ecrm1200.pk> <C:\Users\aniru\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
-nappen/ec/dpi600\ecrm1728.pk><D:/Users/aniru/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmex10.pfb><D:/Users/aniru/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Users/aniru/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Users/aniru/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Users/aniru/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Users
-/aniru/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-<D:/Users/aniru/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-sy7.pfb><D:/Users/aniru/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/symbols/msbm10.pfb>
-Output written on document.pdf (11 pages, 197045 bytes).
+ 30i,8n,27p,415b,244s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\aniru\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappe
+n/ec/dpi600\ecsl1000.pk> <C:\Users\aniru\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\tcrm1000.pk> <C:\Users\aniru\AppData\Local\MiKTeX\fonts/pk/lj
+four/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\aniru\AppData\Local\MiKTeX\fonts
+/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\aniru\AppData\Local\MiKTeX
+\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\aniru\AppData\Local\
+MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\aniru\AppData\
+Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\aniru\Ap
+pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\an
+iru\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><D:/Use
+rs/aniru/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pf
+b><D:/Users/aniru/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb><D:/Users/aniru/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmmi7.pfb><D:/Users/aniru/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><D:/Users/aniru/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr7.pfb><D:/Users/aniru/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Users/aniru/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Users/aniru/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on document.pdf (10 pages, 199407 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
+ 335 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

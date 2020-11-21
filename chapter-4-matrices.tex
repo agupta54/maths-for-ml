@@ -1,3 +1,82 @@
-\chapter{Matrices}
+\chapter{Matrices and Linear Maps}
 
+Each linear map on a finite dimensional map corresponds to a matrix and 
+\[ A = 
+\begin{pmatrix}
+	a_{11} & \dots &  a_{1n} \\
+	\vdots & \ddots & \vdots \\
+	a_{m1} & \dots & a_{mn}
+\end{pmatrix}
+ = (a_{ij})_{\substack{i=1,...,m \\ j=1,...n}}
+\]
+
+$m$ is the number of rows and $n$ is the number of columns. 
+
+Now we want to see how matrices can be related to linear mappings. Consider $T \in \mathcal{L}(U,V)$ where $V,W$ are finite dimensional vector spaces. Let $v_1,...v_n$ be a basis for $V$ and $w_1,...w_m$ be a basis of $W$. The linear mapping is well defined as soon as we know how it acts on the basis vectors. Because then we can express it as linear combination and extend it any vecor in the space. 
+\begin{align*}
+v &= \lambda_1 v_1 + ... + \lambda_n v_n , v \in V \\ 
+T(v) &= T(\lambda_1 v_1 + ... + \lambda_n v_n) \\ 
+&= \lambda_1 T(v_1) + ... + \lambda_n T(v_n) 
+\end{align*}
+
+A matrix is a compact way of doing the above! 
+
+Each image vector vector $T(v_j)$ can be expressed in the basis $w_1,...,w_m$. Here $a_{ij}...a_{mj} \in \Re$ : 
+\begin{equation*}
+	T(v_j) = a_{1j} w_1 + ... + a_{mj} w_m
+\end{equation*}
+
+We now stack these coefficients in a matrix.
+
+\[  
+\begin{pmatrix}
+a_{11} & \dots & a_{ij} & \dots & a_{1n} \\
+\vdots  & &  \vdots & & \vdots \\
+a_{m1} & \dots & a_{mj} & \dots & a_{mn}
+\end{pmatrix}
+\]
+
+This is the matrix of mapping $T$ with respect to the basis $v_1,...,v_n$ of $V$ and $w_1,...w_m$ of $W$. 
+There are $m$ rows, one for each basis vector of $W$. There are $n$ columns, one for each basis vector of $V$.  \\
+
+\textbf{Notation}: Let $T : V \rightarrow W$ be a linear mapping and let $\mathcal{B}$ be a basis of $V$ and $\mathcal{C}$ be a basis of $W$. We denote $H(T, \mathcal{B}, \mathcal{C})$ the matrix corresponding to $T$ with basis $\mathcal{B}$ and $\mathcal{C}$ \\
+
+\textbf{Convinient properties of matrices}: Let $V, W$ be vector spaces and consider the basis is fixed. Let $S, T \in \mathcal{L}(V, W)$. 
+
+\begin{itemize}
+	\item $H(S+T) = H(S) + H(T)$
+	\item $H(\lambda S) = \lambda H(S)$
+	\item For $v = \lambda_1 v_1 + ... + \lambda_n v_n$ we have that $T(v) =   H(T) \begin{pmatrix}
+	\lambda_1 \\
+	\vdots \\
+	\lambda_n
+	\end{pmatrix}$, where $v_1,...v_n$ are the basis of $V$.
+	\item $H(S \circ T) = H(S) \cdot  H(T)$
+\end{itemize}
+
+\subsection{Invertiable maps and matrices}
+
+\begin{definition}
+	Let $T \in \mathcal{L}(V,W)$ is called invertible if there exists another linear map $S \in \mathcal{L}(W,V)$ :
+	\begin{center}
+			$S \circ T = \mathcal{I}_v$ and $T \circ S = \mathcal{I}_w$
+	\end{center}
+\end{definition}
+The map $S$ is called the inverse of $T$, denoted by $T^{-1}$. 
+
+\begin{proposition}
+	Inverese maps are unique.
+\end{proposition}
+
+\begin{proposition}
+	A linear map is invertible if and only if it is injective and surjective.
+\end{proposition}
+
+\begin{proof}
+	Invertible $\implies$ injective: \\
+	Suppose $T(u) = T(v)$. Then $u = T^{-1}(T(u)) = T^{-1}(T(v)) = v$. This means the mapping is injective. \\
+	Invertible $\implies$ surjective: \\
+	Let $w \in W$. Then $w = T(T^{-1}(w)) \implies w \in range(T)$. This means that mapping is surjective. 
+	
+\end{proof}
 

@@ -54,7 +54,7 @@ There are $m$ rows, one for each basis vector of $W$. There are $n$ columns, one
 	\item $H(S \circ T) = H(S) \cdot  H(T)$
 \end{itemize}
 
-\subsection{Invertiable maps and matrices}
+\section{Invertiable maps and matrices}
 
 \begin{definition}
 	Let $T \in \mathcal{L}(V,W)$ is called invertible if there exists another linear map $S \in \mathcal{L}(W,V)$ :
@@ -76,7 +76,33 @@ The map $S$ is called the inverse of $T$, denoted by $T^{-1}$.
 	Invertible $\implies$ injective: \\
 	Suppose $T(u) = T(v)$. Then $u = T^{-1}(T(u)) = T^{-1}(T(v)) = v$. This means the mapping is injective. \\
 	Invertible $\implies$ surjective: \\
-	Let $w \in W$. Then $w = T(T^{-1}(w)) \implies w \in range(T)$. This means that mapping is surjective. 
-	
+	Let $w \in W$. Then $w = T(T^{-1}(w)) \implies w \in range(T)$. This means that mapping is surjective. \\ 
+	 Injective and surjective $\implies$ invertible \\ 
+	 Let $w \in W$, there exists unique $v \in V$ such that $T(v) = w$. Now define the mapping $S(w) = v$. Clearly we have $T \circ S = \mathcal{I}$. Let $v \in V$, then -  
+	 \begin{align*}
+	 T((S \circ T)(v)) = (T \circ S)(Tv) = \mathcal{I} \circ Tv = Tv
+	 \end{align*}
+	 $\implies (S \circ T)v = v \implies S \circ T = \mathcal{I}$
 \end{proof}
+
+\subsection{Inverse Matrix}
+
+\begin{definition}
+	A square matrix $A \in F^{n \times m}$ is invertible if there exists a square matrix $B \in F^{n \times m}$ such that - 
+	\begin{equation*}
+		A \cdot B = B \cdot A = \mathcal{I}
+	\end{equation*}
+	The matrix $B$ is called the inverse matrix and is denoted by $A^{-1}$
+\end{definition}
+
+\begin{proposition}
+	The inverse matrix represents the inverse of the corresponding linear map, that is: $T: V \rightarrow V$ 
+	\begin{equation*}
+		M(T^{-1}) = (M(T))^{-1}
+	\end{equation*}
+\end{proposition}
+
+Essentially we are saying that the matrix of the inverse map is the same taking the matrix of the map and then doing the inverse.
+
+
 
